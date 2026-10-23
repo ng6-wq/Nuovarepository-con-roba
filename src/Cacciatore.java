@@ -8,7 +8,7 @@ public class Cacciatore {
     public void lanciaDardi(Thread d){
         for ( int i = 0; i <= 10; i++) {
             try {
-                Thread.sleep(Duration.ofMillis(100));
+                Thread.sleep(Duration.ofMillis(10));
             } catch (InterruptedException e) {
                 System.out.println("sleep error"+e);
             }

@@ -9,15 +9,13 @@ public class Drago implements Runnable {
 
     }
     @Override
-    public void run() {
-        for (int i = 0; i < num_battiti; i++) {
-            System.out.println(this.nome + " battito ali " + (i + 1));
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                System.out.println("sleep error"+e);
+    public void run(){
+
+            for (int i = 0; i < num_battiti; i++) {
+                System.out.println(this.nome + " battito ali " + (i + 1));
+
             }
-       }
+        }
+
 
     }
-}
